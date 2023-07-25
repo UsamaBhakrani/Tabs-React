@@ -220,12 +220,14 @@ Jobs
 }
 @media screen and (min-width: 992px) {
   .jobs-center {
-    width: 90vw;
+    margin-top: 2rem;
+    width: 80vw;
     display: grid;
     grid-template-columns: 200px 1fr;
     column-gap: 4rem;
   }
   .btn-container {
+    margin-top: 3rem;
     flex-direction: column;
     justify-content: flex-start;
   }

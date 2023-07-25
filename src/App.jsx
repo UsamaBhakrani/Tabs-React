@@ -40,7 +40,7 @@ function App() {
                 setUser(index);
               }}
               key={data.id}
-              className="job-btn"
+              className={`job-btn ${index === user && "active-btn"} `}
             >
               {data.company}
             </button>
@@ -49,7 +49,9 @@ function App() {
       </div>
       <article key={id} className="job-info">
         <h3>{title}</h3>
-        <span className="job-company">{company}</span>
+        <span className="job-company">
+          <h4>{company}</h4>
+        </span>
         <p className="job-date">{dates}</p>
         <div>
           {duties.map((duty, index) => {
